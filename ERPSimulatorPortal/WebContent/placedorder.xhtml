@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="section">
+       
+	     <h:form>
+            <h:outputText id = "p22" value="Success !! Placed Order Details"></h:outputText>
+               <br />
+              <br />
+               
+					<ui:repeat value="#{orderBean.orderdetails}" var="x">
+               	    <h:outputText value="Order:"></h:outputText>
+               	    
+               	
+               	        <h:panelGrid columns="2">
+
+               	    		<h:outputText value="OrderId:"></h:outputText>
+              				<h:outputText value="#{x[0]}" />          			
+              				
+              				<h:outputText value="ConsumerName:"></h:outputText>
+              				<h:outputText value="#{x[1]}" />
+              				
+              				<h:outputText value="ProductName:"></h:outputText>
+              				<h:outputText value="#{x[2]}" />
+
+              				<h:outputText value="ProducerName:"></h:outputText>
+              				<h:outputText value="#{x[3]}" />
+              				
+              				<h:outputText value="OrderDate:"></h:outputText>
+              				<h:outputText value="#{x[4]}" />
+              				
+              				<h:outputText value="OrderStatus:"></h:outputText>
+              				<h:outputText value="#{x[5]}" />         				
+              				
+              				<br /><br />
+              				
+              			</h:panelGrid>
+          		
+               	    </ui:repeat>
+               	    	<h:commandButton value="Go to home page" action="consumer" style= "position: static; 
+                            left: 180px; top: 130px; width: 150px; height: 30px"></h:commandButton>
+                 
+        </h:form>
+   
+    </ui:define>
+</ui:composition>
+</html>

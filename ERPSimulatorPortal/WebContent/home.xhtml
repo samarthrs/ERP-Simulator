@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="section">
+        <h:form>  
+            <h:panelGrid columns="2">
+                <h:outputText id = "o1" value="UserName"></h:outputText>
+                <h:inputText id = "i1" value="#{registerBean.name}"></h:inputText>
+                <h:outputText  id = "o2" value="Password"></h:outputText>
+                <h:inputSecret  id = "i2" value="#{registerBean.password}"></h:inputSecret>
+               
+            </h:panelGrid>
+           
+            <h:selectOneRadio value="#{registerBean.userType}">
+   				<f:selectItem itemValue="Admin" itemLabel="Admin" />
+   				<f:selectItem itemValue="Consumer" itemLabel="Consumer" />
+   				<f:selectItem itemValue="Producer" itemLabel="Producer" />
+   			</h:selectOneRadio>
+            
+            <h:commandButton value="Login" action="#{registerBean.loginUser}" style= "position: static; 
+            left: 180px; top: 130px; width: 180px; height: 30px"></h:commandButton>
+            
+            <h:commandButton value="New Consumer ?" action="newconsumer" style= "position: static; 
+            left: 200px; top: 100px; width: 180px; height: 30px"></h:commandButton>
+            
+		</h:form>	      
+   </ui:define>
+</ui:composition>  
+
+</html>

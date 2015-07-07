@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="section">
+        <h:form>
+              <h:outputText  id = "c234" value="Update Inventory"></h:outputText>
+              <br></br>
+              
+              <ui:repeat value="#{producerbean.updateprodinventorydetails}" var="vos">
+               	    <h:outputText value="Order:"></h:outputText>
+               	    
+               	    
+               	    
+              				<h:outputText value="ProductName:"></h:outputText>
+              				<h:outputText value="#{vos[1]}" />
+              				
+              				<h:outputText value="Quantity:"></h:outputText>
+              				<h:outputText value="#{vos[2]}" />
+              				
+              </ui:repeat>				
+              
+              <h:panelGrid columns="2">
+              
+                <h:outputText id = "o1" value="Quantity"></h:outputText>
+                <h:inputText id = "i1" value="#{producerBean.iquantity}"></h:inputText>
+              
+        			<h:commandButton value="Submit" action="#{producerBean.updatepinventory}" style= "position: static; 
+          		              	     left: 200px; top: 100px; width: 180px; height: 30px"></h:commandButton>
+          		         
+            		     
+        			<h:commandButton value="Go Back to Producer Home" action="producer" style= "position: static; 
+        						     left: 200px; top: 130px; width: 180px; height: 30px"></h:commandButton>			     
+            </h:panelGrid>
+            
+     	</h:form>
+    </ui:define>
+</ui:composition>
+</html>

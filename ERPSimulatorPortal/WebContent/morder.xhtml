@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="section">
+       <h:form> 
+				<h:panelGrid columns="2">
+                	<h:outputText value="Update Product Name"></h:outputText>
+                	<h:selectOneMenu value="#{orderBean.prodname}">
+                    	<f:selectItem itemValue="Car" itemLabel="Car" />
+                    	<f:selectItem itemValue="Bike" itemLabel="Bike" />	 
+                    	<f:selectItem itemValue="Cycle" itemLabel="Cycle" />	
+                    	<f:selectItem itemValue="Bus" itemLabel="Bus" />	
+                    	<f:selectItem itemValue="Truck" itemLabel="Truck" />	  							
+                    </h:selectOneMenu>
+                   
+                    <h:outputText value="Update Producer Name"></h:outputText>
+                    <h:selectOneMenu value="#{orderBean.producername}">
+                    	<f:selectItem itemValue="Maruti" itemLabel="Maruti" />
+                    	<f:selectItem itemValue="Honda" itemLabel="Honda" />	 
+                    	<f:selectItem itemValue="Ferrari" itemLabel="Ferrari" />	
+                    	<f:selectItem itemValue="McLaren" itemLabel="McLaren" />	
+                    	<f:selectItem itemValue="Volkswagen" itemLabel="Volkswagen" />	  							
+                    </h:selectOneMenu>
+                    
+                    <h:outputText  value="Update Quantity"></h:outputText>
+                    <h:inputText value="#{orderBean.quantity}"></h:inputText>
+                    
+                    <h:outputText  value="Enter Order id"></h:outputText>
+                    <h:inputText  value="#{orderBean.oid}"></h:inputText>
+                
+				</h:panelGrid>
+     
+                <h:commandButton value="Submit" action="#{orderBean.oupdate}" style= "position: static; 
+                                 left: 180px; top: 130px; width: 180px; height: 30px"></h:commandButton>
+            
+                <h:commandButton value="Go to Consumer home" action="consumer" style= "position: static; 
+                                 left: 180px; top: 130px; width: 180px; height: 30px"></h:commandButton>
+     	        	   
+	     </h:form>
+               
+    </ui:define>
+</ui:composition>
+</html>

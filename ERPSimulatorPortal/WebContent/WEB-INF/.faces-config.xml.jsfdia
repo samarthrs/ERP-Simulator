@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PROCESS model-entity="JSFProcess">
+ <PROCESS-ITEM NAME="rules:#consumer.xhtml" PATH="/consumer.xhtml"
+  SHAPE="560,32,50,89" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#consumer.xhtml:0" NAME="item"
+   PATH="/consumer.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="placeorder::#placeorder.xhtml" NAME="output"
+    PATH="/placeorder.xhtml" TARGET="rules:#placeorder.xhtml"
+    TITLE="placeorder" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cmcorder::#cmcorder.xhtml" NAME="output1"
+    PATH="/cmcorder.xhtml" TARGET="rules:#cmcorder.xhtml"
+    TITLE="cmcorder" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="morder::#morder.xhtml" NAME="output2"
+    PATH="/morder.xhtml" TARGET="rules:#morder.xhtml" TITLE="morder" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="home::#home.xhtml" NAME="output3"
+    PATH="/home.xhtml" TARGET="rules:#home.xhtml" TITLE="home" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="cancelexorder::#cancelexorder.xhtml"
+    NAME="output6" PATH="/cancelexorder.xhtml"
+    TARGET="rules:#cancelexorder.xhtml" TITLE="cancelexorder" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cmcorder.xhtml" PATH="/cmcorder.xhtml"
+  SHAPE="32,449,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cmcorder.xhtml:0" NAME="item"
+   PATH="/cmcorder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success2::#checkostatus.xhtml" NAME="output"
+    PATH="/checkostatus.xhtml" TARGET="rules:#checkostatus.xhtml"
+    TITLE="success2" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="fail2::#Checkfail.xhtml" NAME="output2"
+    PATH="/Checkfail.xhtml" TARGET="rules:#Checkfail.xhtml"
+    TITLE="fail2" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="existingorders::#ExisitingOrders.xhtml"
+    NAME="output4" PATH="/ExisitingOrders.xhtml"
+    TARGET="rules:#ExisitingOrders.xhtml" TITLE="existingorders" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="existingorderchkfail::#ExistingOrdersFail.xhtml" NAME="output5"
+    PATH="/ExistingOrdersFail.xhtml"
+    TARGET="rules:#ExistingOrdersFail.xhtml"
+    TITLE="existingorderchkfail" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#placeorder.xhtml" PATH="/placeorder.xhtml"
+  SHAPE="32,193,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#placeorder.xhtml:0" NAME="item"
+   PATH="/placeorder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="success1::#placedorder.xhtml" NAME="output"
+    PATH="/placedorder.xhtml" TARGET="rules:#placedorder.xhtml"
+    TITLE="success1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="fail1::#Placeorderfail.xhtml" NAME="output1"
+    PATH="/Placeorderfail.xhtml" TARGET="rules:#Placeorderfail.xhtml"
+    TITLE="fail1" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output2"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#morder.xhtml" PATH="/morder.xhtml"
+  SHAPE="32,993,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#morder.xhtml:0" NAME="item"
+   PATH="/morder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="fail4::#morderfail.xhtml" NAME="output"
+    PATH="/morderfail.xhtml" TARGET="rules:#morderfail.xhtml"
+    TITLE="fail4" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="success4::#modorder.xhtml" NAME="output1"
+    PATH="/modorder.xhtml" TARGET="rules:#modorder.xhtml"
+    TITLE="success4" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Placeorderfail.xhtml"
+  PATH="/Placeorderfail.xhtml" SHAPE="288,209,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Placeorderfail.xhtml:0" NAME="item"
+   PATH="/Placeorderfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#placedorder.xhtml" PATH="/placedorder.xhtml"
+  SHAPE="288,353,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#placedorder.xhtml:0" NAME="item"
+   PATH="/placedorder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#Checkfail.xhtml" PATH="/Checkfail.xhtml"
+  SHAPE="288,465,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#Checkfail.xhtml:0" NAME="item"
+   PATH="/Checkfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#checkostatus.xhtml"
+  PATH="/checkostatus.xhtml" SHAPE="288,673,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#checkostatus.xhtml:0" NAME="item"
+   PATH="/checkostatus.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xorderfail.xhtml" PATH="/xorderfail.xhtml"
+  SHAPE="288,897,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xorderfail.xhtml:0" NAME="item"
+   PATH="/xorderfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#morderfail.xhtml" PATH="/morderfail.xhtml"
+  SHAPE="288,1009,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#morderfail.xhtml:0" NAME="item"
+   PATH="/morderfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#modorder.xhtml" PATH="/modorder.xhtml"
+  SHAPE="296,1080,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#modorder.xhtml:0" NAME="item"
+   PATH="/modorder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#xorder.xhtml" PATH="/xorder.xhtml"
+  SHAPE="288,785,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#xorder.xhtml:0" NAME="item"
+   PATH="/xorder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#producer.xhtml" PATH="/producer.xhtml"
+  SHAPE="240,1681,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#producer.xhtml:0" NAME="item"
+   PATH="/producer.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="orderviewed::#vieworder.xhtml" NAME="output"
+    PATH="/vieworder.xhtml" TARGET="rules:#vieworder.xhtml"
+    TITLE="orderviewed" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="updateostatus::#updateostatus.xhtml"
+    NAME="output1" PATH="/updateostatus.xhtml"
+    TARGET="rules:#updateostatus.xhtml" TITLE="updateostatus" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="viewupdateinventory::#viewupdateinventory.xhtml" NAME="output2"
+    PATH="/viewupdateinventory.xhtml"
+    TARGET="rules:#viewupdateinventory.xhtml"
+    TITLE="viewupdateinventory" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="vieworderfail::#viewofail.xhtml"
+    NAME="output3" PATH="/viewofail.xhtml"
+    TARGET="rules:#viewofail.xhtml" TITLE="vieworderfail" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#updateostatus.xhtml"
+  PATH="/updateostatus.xhtml" SHAPE="496,1873,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#updateostatus.xhtml:0" NAME="item"
+   PATH="/updateostatus.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="orderstatusupdatefail::#updateostatusfail.xhtml" NAME="output"
+    PATH="/updateostatusfail.xhtml"
+    TARGET="rules:#updateostatusfail.xhtml"
+    TITLE="orderstatusupdatefail" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="orderstatusupdatedsuccess::#updateostatussuccess.xhtml"
+    NAME="output1" PATH="/updateostatussuccess.xhtml"
+    TARGET="rules:#updateostatussuccess.xhtml"
+    TITLE="orderstatusupdatedsuccess" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#viewupdateinventory.xhtml"
+  PATH="/viewupdateinventory.xhtml" SHAPE="496,2017,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#viewupdateinventory.xhtml:0" NAME="item"
+   PATH="/viewupdateinventory.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="inventoryviewed::#viewinventory.xhtml"
+    NAME="output" PATH="/viewinventory.xhtml"
+    TARGET="rules:#viewinventory.xhtml" TITLE="inventoryviewed" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="updateinventory::#updateinventory.xhtml"
+    NAME="output1" PATH="/updateinventory.xhtml"
+    TARGET="rules:#updateinventory.xhtml" TITLE="updateinventory" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="viewinventoryfail::#viewinvfail.xhtml"
+    NAME="output2" PATH="/viewinvfail.xhtml"
+    TARGET="rules:#viewinvfail.xhtml" TITLE="viewinventoryfail" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#updateinventory.xhtml"
+  PATH="/updateinventory.xhtml" SHAPE="736,2321,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#updateinventory.xhtml:0" NAME="item"
+   PATH="/updateinventory.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT
+    ID="updateinventoryfail::#updateinventoryfail.xhtml" NAME="output"
+    PATH="/updateinventoryfail.xhtml"
+    TARGET="rules:#updateinventoryfail.xhtml"
+    TITLE="updateinventoryfail" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT
+    ID="inventoryupdated::#updateinventorysuccess.xhtml" NAME="output1"
+    PATH="/updateinventorysuccess.xhtml"
+    TARGET="rules:#updateinventorysuccess.xhtml"
+    TITLE="inventoryupdated" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#vieworder.xhtml" PATH="/vieworder.xhtml"
+  SHAPE="496,1665,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#vieworder.xhtml:0" NAME="item"
+   PATH="/vieworder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#producer.xhtml" NAME="output"
+    PATH="/producer.xhtml" TARGET="rules:#producer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#home.xhtml" PATH="/home.xhtml"
+  SHAPE="40,1488,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#home.xhtml:0" NAME="item" PATH="/home.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="newconsumer::#newconsumer.xhtml"
+    NAME="output" PATH="/newconsumer.xhtml"
+    TARGET="rules:#newconsumer.xhtml" TITLE="newconsumer" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="Producer::#producer.xhtml" NAME="output1"
+    PATH="/producer.xhtml" TARGET="rules:#producer.xhtml"
+    TITLE="Producer" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="Consumer::#consumer.xhtml" NAME="output2"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="Consumer" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="false::#loginfail.xhtml" NAME="output3"
+    PATH="/loginfail.xhtml" TARGET="rules:#loginfail.xhtml"
+    TITLE="false" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="Admin::#admin.xhtml" NAME="output4"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="Admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#newconsumer.xhtml" PATH="/newconsumer.xhtml"
+  SHAPE="216,1488,50,41" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#newconsumer.xhtml:0" NAME="item"
+   PATH="/newconsumer.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="home::#home.xhtml" NAME="output"
+    PATH="/home.xhtml" TARGET="rules:#home.xhtml" TITLE="home" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="true::#registered.xhtml" NAME="output1"
+    PATH="/registered.xhtml" TARGET="rules:#registered.xhtml"
+    TITLE="true" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="Exists::#registerfail.xhtml" NAME="output2"
+    PATH="/registerfail.xhtml" TARGET="rules:#registerfail.xhtml"
+    TITLE="Exists" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#registerfail.xhtml"
+  PATH="/registerfail.xhtml" SHAPE="408,1552,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#registerfail.xhtml:0" NAME="item"
+   PATH="/registerfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="home::#home.xhtml" NAME="output"
+    PATH="/home.xhtml" TARGET="rules:#home.xhtml" TITLE="home" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#loginfail.xhtml" PATH="/loginfail.xhtml"
+  SHAPE="216,1344,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#loginfail.xhtml:0" NAME="item"
+   PATH="/loginfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="home::#home.xhtml" NAME="output"
+    PATH="/home.xhtml" TARGET="rules:#home.xhtml" TITLE="home" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#registered.xhtml" PATH="/registered.xhtml"
+  SHAPE="411,1435,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#registered.xhtml:0" NAME="item"
+   PATH="/registered.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="home::#home.xhtml" NAME="output"
+    PATH="/home.xhtml" TARGET="rules:#home.xhtml" TITLE="home" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ExisitingOrders.xhtml"
+  PATH="/ExisitingOrders.xhtml" SHAPE="280,584,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ExisitingOrders.xhtml:0" NAME="item"
+   PATH="/ExisitingOrders.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#ExistingOrdersFail.xhtml"
+  PATH="/ExistingOrdersFail.xhtml" SHAPE="464,584,50,25" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#ExistingOrdersFail.xhtml:0" NAME="item"
+   PATH="/ExistingOrdersFail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="consumer::#consumer.xhtml" NAME="output"
+    PATH="/consumer.xhtml" TARGET="rules:#consumer.xhtml"
+    TITLE="consumer" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#cancelexorder.xhtml"
+  PATH="/cancelexorder.xhtml" SHAPE="748,197,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#cancelexorder.xhtml:0" NAME="item"
+   PATH="/cancelexorder.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="fail3::#xorderfail.xhtml" NAME="output"
+    PATH="/xorderfail.xhtml" TARGET="rules:#xorderfail.xhtml"
+    TITLE="fail3" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="success3::#xorder.xhtml" NAME="output1"
+    PATH="/xorder.xhtml" TARGET="rules:#xorder.xhtml" TITLE="success3" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#viewinvfail.xhtml" PATH="/viewinvfail.xhtml"
+  SHAPE="856,2168,50,25" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#updateinventorysuccess.xhtml"
+  PATH="/updateinventorysuccess.xhtml" SHAPE="960,2449,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#updateostatussuccess.xhtml"
+  PATH="/updateostatussuccess.xhtml" SHAPE="752,1936,50,25" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#viewinventory.xhtml"
+  PATH="/viewinventory.xhtml" SHAPE="736,2209,0,0" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#updateostatusfail.xhtml"
+  PATH="/updateostatusfail.xhtml" SHAPE="752,1848,50,25" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#viewofail.xhtml" PATH="/viewofail.xhtml"
+  SHAPE="672,1680,50,25" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#updateinventoryfail.xhtml"
+  PATH="/updateinventoryfail.xhtml" SHAPE="960,2336,50,25" model-entity="JSFProcessGroup"/>
+ <PROCESS-ITEM NAME="rules:#admin.xhtml" PATH="/admin.xhtml"
+  SHAPE="528,3121,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#admin.xhtml:0" NAME="item"
+   PATH="/admin.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="checkordercon::#checkordercon.xhtml"
+    NAME="output" PATH="/checkordercon.xhtml"
+    TARGET="rules:#checkordercon.xhtml" TITLE="checkordercon" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="checkorderpro::#checkorderpro.xhtml"
+    NAME="output1" PATH="/checkorderpro.xhtml"
+    TARGET="rules:#checkorderpro.xhtml" TITLE="checkorderpro" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="listcon::#listcon.xhtml" NAME="output2"
+    PATH="/listcon.xhtml" TARGET="rules:#listcon.xhtml" TITLE="listcon" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failc::#listfailc.xhtml" NAME="output3"
+    PATH="/listfailc.xhtml" TARGET="rules:#listfailc.xhtml"
+    TITLE="failc" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="listprod::#listprod.xhtml" NAME="output4"
+    PATH="/listprod.xhtml" TARGET="rules:#listprod.xhtml"
+    TITLE="listprod" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="failp::#listfailp.xhtml" NAME="output5"
+    PATH="/listfailp.xhtml" TARGET="rules:#listfailp.xhtml"
+    TITLE="failp" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="condel::#condel.xhtml" NAME="output6"
+    PATH="/condel.xhtml" TARGET="rules:#condel.xhtml" TITLE="condel" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#acsucc.xhtml" PATH="/acsucc.xhtml"
+  SHAPE="256,3137,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#acsucc.xhtml:0" NAME="item"
+   PATH="/acsucc.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#acfail.xhtml" PATH="/acfail.xhtml"
+  SHAPE="256,3441,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#acfail.xhtml:0" NAME="item"
+   PATH="/acfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#apsucc.xhtml" PATH="/apsucc.xhtml"
+  SHAPE="256,3553,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#apsucc.xhtml:0" NAME="item"
+   PATH="/apsucc.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#apfail.xhtml" PATH="/apfail.xhtml"
+  SHAPE="256,3697,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#apfail.xhtml:0" NAME="item"
+   PATH="/apfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#checkordercon.xhtml"
+  PATH="/checkordercon.xhtml" SHAPE="32,3121,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#checkordercon.xhtml:0" NAME="item"
+   PATH="/checkordercon.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="acsuccess::#acsucc.xhtml" NAME="output"
+    PATH="/acsucc.xhtml" TARGET="rules:#acsucc.xhtml" TITLE="acsuccess" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="acfail::#acfail.xhtml" NAME="output1"
+    PATH="/acfail.xhtml" TARGET="rules:#acfail.xhtml" TITLE="acfail" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#checkorderpro.xhtml"
+  PATH="/checkorderpro.xhtml" SHAPE="32,3537,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#checkorderpro.xhtml:0" NAME="item"
+   PATH="/checkorderpro.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="apsuccess::#apsucc.xhtml" NAME="output"
+    PATH="/apsucc.xhtml" TARGET="rules:#apsucc.xhtml" TITLE="apsuccess" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="apfail::#apfail.xhtml" NAME="output1"
+    PATH="/apfail.xhtml" TARGET="rules:#apfail.xhtml" TITLE="apfail" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#listcon.xhtml" PATH="/listcon.xhtml"
+  SHAPE="256,3809,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#listcon.xhtml:0" NAME="item"
+   PATH="/listcon.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#listfailc.xhtml" PATH="/listfailc.xhtml"
+  SHAPE="256,3921,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#listfailc.xhtml:0" NAME="item"
+   PATH="/listfailc.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#listprod.xhtml" PATH="/listprod.xhtml"
+  SHAPE="256,4033,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#listprod.xhtml:0" NAME="item"
+   PATH="/listprod.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#listfailp.xhtml" PATH="/listfailp.xhtml"
+  SHAPE="256,4145,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#listfailp.xhtml:0" NAME="item"
+   PATH="/listfailp.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#condel.xhtml" PATH="/condel.xhtml"
+  SHAPE="256,4257,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#condel.xhtml:0" NAME="item"
+   PATH="/condel.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="successdelcon::#delconsuccess.xhtml"
+    NAME="output" PATH="/delconsuccess.xhtml"
+    TARGET="rules:#delconsuccess.xhtml" TITLE="successdelcon" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="faildelcon::#delconfail.xhtml"
+    NAME="output1" PATH="/delconfail.xhtml"
+    TARGET="rules:#delconfail.xhtml" TITLE="faildelcon" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output2"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#delconfail.xhtml" PATH="/delconfail.xhtml"
+  SHAPE="528,4417,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#delconfail.xhtml:0" NAME="item"
+   PATH="/delconfail.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+ <PROCESS-ITEM NAME="rules:#delconsuccess.xhtml"
+  PATH="/delconsuccess.xhtml" SHAPE="528,4241,0,0" model-entity="JSFProcessGroup">
+  <PROCESS-ITEM ID="rules:#delconsuccess.xhtml:0" NAME="item"
+   PATH="/delconsuccess.xhtml" model-entity="JSFProcessItem">
+   <PROCESS-ITEM-OUTPUT ID="admin::#admin.xhtml" NAME="output"
+    PATH="/admin.xhtml" TARGET="rules:#admin.xhtml" TITLE="admin" model-entity="JSFProcessItemOutput"/>
+  </PROCESS-ITEM>
+ </PROCESS-ITEM>
+</PROCESS>

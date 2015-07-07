@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="section">
+        <h:form>
+              <h:outputText  id = "c234" value="Welcome Producer"></h:outputText>
+              <br></br>
+              <br></br>
+              <br></br>
+                           
+              <h:panelGrid columns="2">
+              
+     	   			<h:commandButton value="View Orders" action="#{orderBean.viewporder}" style= "position: static; 
+          		              	     left: 200px; top: 100px; width: 180px; height: 30px"></h:commandButton>
+            
+          		    <h:commandButton value="Update Order Status" action="updateostatus" style= "position: static; 
+        						     left: 200px; top: 130px; width: 180px; height: 30px"></h:commandButton>
+        						     
+        			<h:commandButton value="View/Update Inventory" action="viewupdateinventory" style= "position: static; 
+          		              	     left: 200px; top: 100px; width: 180px; height: 30px"></h:commandButton>
+          		              	     
+        			<h:commandButton value="Logout" action="home" style= "position: static; 
+        						     left: 200px; top: 130px; width: 180px; height: 30px"></h:commandButton>
+        						     			     
+            </h:panelGrid>
+     	</h:form>
+    </ui:define>
+</ui:composition>
+</html>

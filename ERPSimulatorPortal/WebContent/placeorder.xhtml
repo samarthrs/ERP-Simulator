@@ -1,0 +1,49 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="section">
+       <h:form>
+       <h:outputText  id = "c1" value="#{loginBean.userName}"></h:outputText>
+				<h:panelGrid columns="6">
+                	<h:outputText id = "z121" value="Select Product Name"></h:outputText>
+                	<h:selectOneMenu value="#{orderBean.prodname}">
+                    	<f:selectItem itemValue="Car" itemLabel="Car" />
+                    	<f:selectItem itemValue="Bike" itemLabel="Bike" />	 
+                    	<f:selectItem itemValue="Cycle" itemLabel="Cycle" />	
+                    	<f:selectItem itemValue="Bus" itemLabel="Bus" />	
+                    	<f:selectItem itemValue="Truck" itemLabel="Truck" />	  							
+                    </h:selectOneMenu>
+                    <h:outputText id = "z122" value="Select Producer Name"></h:outputText>
+                    <h:selectOneMenu value="#{orderBean.producername}">
+                    	<f:selectItem itemValue="Maruti" itemLabel="Maruti" />
+                    	<f:selectItem itemValue="Honda" itemLabel="Honda" />	 
+                    	<f:selectItem itemValue="Ferrari" itemLabel="Ferrari" />	
+                    	<f:selectItem itemValue="McLaren" itemLabel="McLaren" />	
+                    	<f:selectItem itemValue="Volkswagen" itemLabel="Volkswagen" />	  							
+                    </h:selectOneMenu>
+                    <h:outputText id = "z123" value="Enter Quantity"></h:outputText>
+                    <h:inputText id = "z023" value="#{orderBean.quantity}"></h:inputText>
+                    <h:outputText id = "z923" value="Enter Order Date in (mm-dd-yyyy)"></h:outputText>
+                    <h:inputText id = "z823" value="#{orderBean.odate}"></h:inputText>
+                 
+				</h:panelGrid>
+     
+                
+                
+                <h:commandButton value="Submit" action="#{orderBean.orderSet}" style= "position: static; 
+            left: 180px; top: 130px; width: 180px; height: 30px"></h:commandButton>
+            
+                <h:commandButton value="Go to Consumer home" action="consumer" style= "position: static; 
+                                 left: 180px; top: 130px; width: 180px; height: 30px"></h:commandButton>
+     	        	   
+	     </h:form>
+               
+    </ui:define>
+</ui:composition>
+</html>
