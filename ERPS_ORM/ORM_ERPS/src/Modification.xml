@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+	<Admin>
+		<operation>Delete</operation>
+		<adminId>1</adminId>
+	</Admin>
+	<Admin>
+		<operation>Update</operation>
+		<adminId>2</adminId>
+		<username>newadmin</username>
+		<password>changed</password>
+	</Admin>
+	<Admin>
+		<operation>Select</operation>
+		<adminId>2</adminId>
+	</Admin>
+	
+	
+	
+	<Consumer>
+		<operation>Delete</operation>
+		<ConsumerId>1</ConsumerId>
+	</Consumer>
+	<Consumer>
+		<operation>Update</operation>
+		<ConsumerId>2</ConsumerId>
+		<username>dino</username>
+		<password>123</password>
+	</Consumer>
+	<Consumer>
+		<operation>Select</operation>
+		<ConsumerId>2</ConsumerId>
+	</Consumer>
+	
+	
+	<Producer>
+		<operation>Delete</operation>
+		<ProducerId>1</ProducerId>
+	</Producer>
+	<Producer>
+		<operation>Update</operation>
+		<ProducerId>2</ProducerId>
+		<username>sati</username>
+		<password>444</password>
+	</Producer>
+	<Producer>
+		<operation>Select</operation>
+		<ProducerId>2</ProducerId>
+	</Producer>
+	
+	
+</Data>
