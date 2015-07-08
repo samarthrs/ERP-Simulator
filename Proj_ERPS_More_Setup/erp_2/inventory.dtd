@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT inventory (inventoryID,productID,iQuantity,producerID)>
+<!ELEMENT inventoryID (#PCDATA)>
+<!ELEMENT productID (#PCDATA)>
+<!ELEMENT iQuantity (#PCDATA)>
+<!ELEMENT producerID (#PCDATA)>

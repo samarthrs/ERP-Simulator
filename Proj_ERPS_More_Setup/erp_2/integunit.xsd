@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="integunit">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name = "adminID" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name = "orderID" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name = "productID" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name = "integID" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>
+
+

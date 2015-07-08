@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="order">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name = "orderid" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name = "quantity" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+				<xs:element name = "orderdate" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name = "orderstatus" type="xs:string" minOccurs="1" maxOccurs="1"/>
+				<xs:element name = "consumerID" type="xs:integer" minOccurs="1" maxOccurs="1"/>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>	
+</xs:schema>
+
+

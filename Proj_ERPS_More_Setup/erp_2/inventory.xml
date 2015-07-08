@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE inventory SYSTEM "inventory.dtd">
+<inventory>
+	<inventoryID>2</inventoryID>
+	<productID>12</productID>
+	<iQuantity>33</iQuantity>
+	<producerID>11</producerID>
+</inventory>
+

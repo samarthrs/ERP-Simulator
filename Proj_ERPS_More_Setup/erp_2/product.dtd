@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT product (productID,orderID,orderStatus,pQuantity,producerID)>
+<!ELEMENT productID (#PCDATA)>
+<!ELEMENT orderID (#PCDATA)>
+<!ELEMENT orderStatus (#PCDATA)>
+<!ELEMENT pQuantity (#PCDATA)>
+<!ELEMENT producerID (#PCDATA)>

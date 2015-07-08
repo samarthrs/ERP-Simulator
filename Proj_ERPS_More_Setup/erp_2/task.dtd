@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT task (TaskID,TaskDesc,orderID,productID)>
+<!ELEMENT TaskID (#PCDATA)>
+<!ELEMENT TaskDesc (#PCDATA)>
+<!ELEMENT orderID (#PCDATA)>
+<!ELEMENT productID (#PCDATA)>

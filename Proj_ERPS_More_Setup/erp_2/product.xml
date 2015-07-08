@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE product SYSTEM "product.dtd">
+<product>
+	<productID>2</productID>
+	<orderID>12</orderID>
+	<orderStatus>order requested</orderStatus>
+	<pQuantity>100</pQuantity>
+	<producerID>14</producerID>
+</product>
+
+
+

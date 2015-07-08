@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT integunit (adminID,orderID,productID,integID)>
+<!ELEMENT adminID (#PCDATA)>
+<!ELEMENT orderID (#PCDATA)>
+<!ELEMENT productID (#PCDATA)>
+<!ELEMENT integID (#PCDATA)>

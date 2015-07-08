@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT producer (producerID,username,password)>
+<!ELEMENT producerID (#PCDATA)>
+<!ELEMENT username (#PCDATA)>
+<!ELEMENT password (#PCDATA)>
